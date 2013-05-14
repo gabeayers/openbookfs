@@ -11,7 +11,7 @@ Info::Info(QWidget *parent) :
 
     i = new QWidget(parent);
 
-    i->setGeometry(450,0,350,300);
+    i->setGeometry(450,0,350,150);
     i->setStyleSheet("background:#fff");
     QVBoxLayout *layout = new QVBoxLayout();
     layout->setAlignment(Qt::AlignTop);

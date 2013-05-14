@@ -12,7 +12,9 @@ LocalClient::LocalClient(QWidget *parent) :
     ui->setupUi(this);
 
     ui->display_i->SetText("Display Name: This is the name which will be displayed on the server and other clients to identify this client. If you only mount one file system, consider using the machine hostname.");
-
+    ui->local_port_i->SetText("This is the port on the local client that you would like to connect too. Hostname or IP will be added to this GUI in the near future.");
+    ui->remote_port_i->SetText("The port on the remote machine you would like to connect to.");
+    ui->data_dir_i->SetText("The data directory is the local directory where temporary files are stored.");
     connect(ui->submit, SIGNAL(clicked()),this,SLOT(update_params()));
     connect(ui->sync_files,SIGNAL(clicked()),this,SLOT(start_sync()));
     connect(ui->data_dir,SIGNAL(clicked()),this,SLOT(get_data_dir()));
